@@ -1,4 +1,4 @@
-document.getElementById("demo").innerHTML="Javascript is working";
+document.getElementById("demo").innerHTML="----------------Javascript is working----------------";
 
 function Rock(){
   PlayerMove("Rock");

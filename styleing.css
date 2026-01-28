@@ -46,8 +46,6 @@ button:hover {
   padding: 2rem;
   justify-content: center;
 }
-
-
 @media (min-width: 600px) {
   .container {
     width: 70%;
