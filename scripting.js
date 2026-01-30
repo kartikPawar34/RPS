@@ -38,3 +38,16 @@ function PlayerMove(humanMove){
   document.getElementById("turns").innerHTML = `Computer Choose ${computerMove}, Player Move ${humanMove} `;
 
 }
+function NumberGenerator(){
+  const print = document.getElementById("display-1");
+
+  let GenNum = Math.floor(Math.random()*1000)+1;
+  let GenMul = Math.floor(Math.random()*1000)+1;
+  let target = [
+   GenNum+" x "+GenMul+" = "+(GenNum*GenMul),
+   GenNum+" + "+GenMul+" = "+(GenNum+GenMul),
+   GenNum+" / "+GenMul+" = "+(GenNum/GenMul)
+  ];
+let randomIndex = Math.floor(Math.random() * target.length);
+print.innerHTML = target[randomIndex];
+}
