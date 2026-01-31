@@ -11,12 +11,11 @@
       align-items: center;
       text-align:center;
       font-family: 'Courier New', Courier, monospace;
-      padding:20%;
       color:#d8d8d8;
+      padding:2rem;
     }
     button{
       font-family: 'Courier New', Courier, monospace;
-      font-size:1.15rem;
       width:50%;
       height:2.5rem;
       background-color:#000000;
@@ -32,6 +31,7 @@
       border: 2.3px solid #8d8d8d;
       padding: 1rem;
       border-radius:10px;
+      margin:5rem 0rem;
     }
     .display{
       border: 1px solid #3d3d3d;
@@ -41,14 +41,29 @@
       justify-content: center;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+    @media (min-width: 1024px){
+      body{
+        padding:2rem;
+      }
+
+      button{
+        font-size:1.2rem;
+        height:3rem;
+        color:#ddd;
+      }
+      .display{
+        height:rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <p id="demo"></p>
+  <marquee><p id="demo"></p></marquee>
   <div class="container">
     <h1 class="display" id="display-1"></h1>
     <button onclick="NumberGenerator()">Generate Number</button>
   </div>
+  <button onclick="window.location.href='yesorno.html'">Yes or No</button>
 </body>
 <script src="scripting.js"></script>
 </html>

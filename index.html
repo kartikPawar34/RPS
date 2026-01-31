@@ -9,15 +9,18 @@
 <body>
   <marquee><p id="demo" class="java-is-working"></p></marquee>
   <h1>Rock Paper Scissor</h1>
+
   <div class="container">
-    <h1 class="result" id="Result"></h1>
+    <h1 class="result" id="Result">Choose Your Move!</h1>
     <p class="Turns" id="turns"></p>
-    <button onclick="Rock()">Rock</button>
-    <button onclick="Paper()">Paper</button>
-    <button onclick="Scissor()">Scissor</button>
+    <button onclick="playGame('Rock')">Rock</button>
+    <button onclick="playGame('Paper')">Paper</button>
+    <button onclick="playGame('Scissor')">Scissor</button>
   </div>
-  <a href="numberG.html"><button>Number generator</button></a>
-  <a href="https:/kartikpawar34.github.io/calculator/" target="_blank"><button>Calculator</button></a>
-  <a href="https:/kartikpawar34.github.io/updatePortFolio/" target="_blank"><button>My Portfolio</button></a>
-</body><script src="scripting.js"></script>
+
+    <button onclick="window.location.href='numberG.html'">Number Generator</button>
+    <button onclick="window.open('https://kartikpawar34.github.io/calculator/', '_blank')">Calculator</button>
+    <button onclick="window.open('https://kartikpawar34.github.io/updatePortFolio/', '_blank')">My Portfolio</button>
+
+</body>
 </html>
